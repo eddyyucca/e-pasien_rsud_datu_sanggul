@@ -475,6 +475,7 @@ header span i {
   height: 650px;
 }
 
+/* Menu slid bergerak */
 .slider .item-first {
   background-image: url(../images/slider1.jpg);
 }
