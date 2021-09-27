@@ -90,7 +90,7 @@ $tglbesok               = substr($besok, 8, 2);
                          $datadokter = $datadokter .
                               "<div class='col-md-4 col-sm-6'>
                                     <div class='team-thumb wow fadeInUp' data-wow-delay='" . $delay . "s'>
-                                         <img alt='Photo' src='http://" . host() . "/webapps/penggajian/$rsquerydokter[4]' class='img-responsive' />
+                                       
                                           <div class='team-info'>
                                                <h3>$rsquerydokter[1]</h3>
                                                <p>$rsquerydokter[2]</p>
@@ -252,3 +252,5 @@ $tglbesok               = substr($besok, 8, 2);
 <section id="google-map">
      <iframe src="https://maps.google.com/maps?q=rsud%20datu%20sanggul&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen="true"></iframe>
 </section>
+<!--  <img alt='Photo' src='http://" . host() . "/webapps/penggajian/$rsquerydokter[4]' class='img-responsive' />
+                                          <div class='team-info'> -->
