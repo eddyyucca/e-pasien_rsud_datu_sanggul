@@ -40,7 +40,7 @@
                         }
                         $_SESSION["semuadokter"]=$datadokter;
                     }
-                    echo $_SESSION["semuadokter"];
+                    echo  $_SESSION["semuadokter"]=$datadokter;
                 ?>
            </div>
       </div>

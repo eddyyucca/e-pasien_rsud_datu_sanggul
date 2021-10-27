@@ -52,15 +52,28 @@ $tglbesok               = substr($besok, 8, 2);
                     <div class="about-info">
                          <h2 class="wow fadeInUp" data-wow-delay="0.6s">Selamat datang di Pusat Kesehatan Anda</h2>
                          <div class="wow fadeInUp" data-wow-delay="0.8s">
-                              <p><?= $_SESSION["nama_instansi"] . " merupakan salah satu rumah sakit umum di wilayah " . $_SESSION["kabupaten"] . " yang berkedudukan di " . $_SESSION["alamat_instansi"] . ". " . $_SESSION["nama_instansi"] . " merupakan perkembangan dari balai pengobatan, klinik dan berada dibawah YASKI. " . $_SESSION["nama_instansi"] . " mendapat izin operasional dengan Kode PPK " . $_SESSION["kode_ppkkemenkes"] . " sejak bulan November 2009 dan diresmikan tanggal 21 februari 2010. " . $_SESSION["nama_instansi"] . " dalam memberikan pelayanannya mengambil filosofi  dasar bahwa pelayanan kesehatan yang baik itu tidak harus mahal dan kalau bisa, harus tidak mahal. Filosofi dasar yang kedua adalah bersama yang tidak mampu kita harus maju. Hal ini memiliki arti bahwa " . $_SESSION["nama_instansi"] . " harus mampu memajukan dirinya dan pihak-pihak yang berhubungan dengan dirinya menuju arah yang lebih baik." ?></p>
+                              <p>
+                                  Rumah Sakit Umum Daerah Datu Sanggul Rantau dibangun sejak tahun 1980
+dengan biaya dari APBN yang melalui DIP Proyek
+Pengembangan RSU Prop/Kab/Kodya Kalimantan Selatan. Dengan Luas lahan 13.771 dan Luas bangunan 4210 M2. Diresmikan bertepatan dengan Hari Kesehatan Nasional ke XIX tanggal 12
+Nopember 1983 oleh Gubernur Kalimantan Selatan Bapak H. Mistar Cokro Koesomo.
+<br>
+Rumah Sakit Umum Datu Sanggul merupakan satu-satunya Rumah Sakit Umum
+milik Pemerintah Kabupaten Tapin sejak tahun 1983 masih berstatus
+tipe D kemudian naik kelas menjadi tipe C dengan SK Menkes RI
+Nomor 1177/Menkes/SK/X/2004. <br>
+Pada tanggal 07 sampai dengan 10 Oktober 2019, Rumah Sakit Umum Datu Sanggul Rantau melaksanakan re Akreditasai SNARS oleh Komisi Akreditasi Rumah Sakit/KARS dan berhasil lulus tingkat Madya (bintang tiga)
+                            
+                         
+                         </p>
                          </div>
                          <figure class="profile wow fadeInUp" data-wow-delay="1s">
                               <!-- derektur -->
                               <img src="images/author-image.jpg" class="img-responsive" alt="" />
                               <!-- derektur -->
                               <figcaption>
-                                   <h3>dr. Saiful Umam</h3>
-                                   <p>Direktur Utama</p>
+                                   <h3>dr. H. MILHAN, Sp.OG(K)-Obginsos., MM</h3>
+                                   <p>Direktur RSUD Datu Sanggul</p>
                               </figcaption>
                          </figure>
                     </div>
@@ -75,7 +88,7 @@ $tglbesok               = substr($besok, 8, 2);
           <div class="row">
                <div class="col-md-12 col-sm-12">
                     <div class="about-info">
-                         <h2 class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                         <h2 class="section-title wow fadeInUp" data-wow-delay="0.3s">
                               <center>Dokter Kami</center>
                          </h2>
                     </div>
@@ -128,6 +141,7 @@ $tglbesok               = substr($besok, 8, 2);
 <section id="news" data-stellar-background-ratio="2.5">
      <div class="container">
           <div class="row">
+                <div data-mc-src="453149c3-e690-42a0-adee-d57c9d78e2d1"></div>
                <div class="col-md-12 col-sm-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
                          <h2>Jadwal Praktek Dokter</h2>
@@ -154,6 +168,8 @@ $tglbesok               = substr($besok, 8, 2);
 <section id="appointment" data-stellar-background-ratio="3">
      <div class="container">
           <div class="row">
+        <script src="https://cdn2.woxo.tech/a.js#6010c3427e1f560015b71756" async data-usrc>
+        </script>
                <div class="col-md-6 col-sm-6">
                     <!-- Foto 2 -->
                     <img src="images/appointment-image.jpg" class="img-responsive" alt="">
@@ -252,5 +268,3 @@ $tglbesok               = substr($besok, 8, 2);
 <section id="google-map">
      <iframe src="https://maps.google.com/maps?q=rsud%20datu%20sanggul&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen="true"></iframe>
 </section>
-<!--  <img alt='Photo' src='http://" . host() . "/webapps/penggajian/$rsquerydokter[4]' class='img-responsive' />
-                                          <div class='team-info'> -->
