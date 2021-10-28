@@ -15,6 +15,8 @@
      <link rel="stylesheet" href="css/owl.carousel.css" />
      <link rel="stylesheet" href="css/owl.theme.default.min.css" />
      <link rel="stylesheet" href="css/tooplate-style.css" />
+     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
 </head>
 
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">

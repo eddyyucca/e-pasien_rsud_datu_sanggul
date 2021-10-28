@@ -50,22 +50,22 @@ $tglbesok               = substr($besok, 8, 2);
           <div class="row">
                <div class="col-md-6 col-sm-6">
                     <div class="about-info">
-                         <h2 class="wow fadeInUp" data-wow-delay="0.6s">Selamat datang di Pusat Kesehatan Anda</h2>
+                         <h2 class="wow fadeInUp" data-wow-delay="0.6s">Selamat datang di <br> RSUD Datu Sanggul Rantau</h2>
                          <div class="wow fadeInUp" data-wow-delay="0.8s">
                               <p>
-                                  Rumah Sakit Umum Daerah Datu Sanggul Rantau dibangun sejak tahun 1980
-dengan biaya dari APBN yang melalui DIP Proyek
-Pengembangan RSU Prop/Kab/Kodya Kalimantan Selatan. Dengan Luas lahan 13.771 dan Luas bangunan 4210 M2. Diresmikan bertepatan dengan Hari Kesehatan Nasional ke XIX tanggal 12
-Nopember 1983 oleh Gubernur Kalimantan Selatan Bapak H. Mistar Cokro Koesomo.
-<br>
-Rumah Sakit Umum Datu Sanggul merupakan satu-satunya Rumah Sakit Umum
-milik Pemerintah Kabupaten Tapin sejak tahun 1983 masih berstatus
-tipe D kemudian naik kelas menjadi tipe C dengan SK Menkes RI
-Nomor 1177/Menkes/SK/X/2004. <br>
-Pada tanggal 07 sampai dengan 10 Oktober 2019, Rumah Sakit Umum Datu Sanggul Rantau melaksanakan re Akreditasai SNARS oleh Komisi Akreditasi Rumah Sakit/KARS dan berhasil lulus tingkat Madya (bintang tiga)
-                            
-                         
-                         </p>
+                                   Rumah Sakit Umum Daerah Datu Sanggul Rantau dibangun sejak tahun 1980
+                                   dengan biaya dari APBN yang melalui DIP Proyek
+                                   Pengembangan RSU Prop/Kab/Kodya Kalimantan Selatan. Dengan Luas lahan 13.771 dan Luas bangunan 4210 M2. Diresmikan bertepatan dengan Hari Kesehatan Nasional ke XIX tanggal 12
+                                   Nopember 1983 oleh Gubernur Kalimantan Selatan Bapak H. Mistar Cokro Koesomo.
+                                   <br>
+                                   Rumah Sakit Umum Datu Sanggul merupakan satu-satunya Rumah Sakit Umum
+                                   milik Pemerintah Kabupaten Tapin sejak tahun 1983 masih berstatus
+                                   tipe D kemudian naik kelas menjadi tipe C dengan SK Menkes RI
+                                   Nomor 1177/Menkes/SK/X/2004. <br>
+                                   Pada tanggal 07 sampai dengan 10 Oktober 2019, Rumah Sakit Umum Datu Sanggul Rantau melaksanakan re Akreditasai SNARS oleh Komisi Akreditasi Rumah Sakit/KARS dan berhasil lulus tingkat Madya (bintang tiga)
+
+
+                              </p>
                          </div>
                          <figure class="profile wow fadeInUp" data-wow-delay="1s">
                               <!-- derektur -->
@@ -98,23 +98,19 @@ Pada tanggal 07 sampai dengan 10 Oktober 2019, Rumah Sakit Umum Datu Sanggul Ran
                if (!isset($_SESSION["dokter"])) {
                     $delay          = 0.2;
                     $datadokter     = "";
-                    $querydokter = bukaquery("select dokter.kd_dokter,left(dokter.nm_dokter,20) as dokter,spesialis.nm_sps,dokter.no_ijn_praktek,pegawai.photo,dokter.no_telp from dokter inner join spesialis on dokter.kd_sps=spesialis.kd_sps inner join pegawai on dokter.kd_dokter=pegawai.nik where dokter.status='1' and dokter.kd_dokter<>'-' group by spesialis.nm_sps limit 5");
+                    $querydokter = bukaquery("select dokter.kd_dokter,left(dokter.nm_dokter,50) as dokter,spesialis.nm_sps,dokter.no_ijn_praktek,pegawai.photo,dokter.no_telp from dokter inner join spesialis on dokter.kd_sps=spesialis.kd_sps inner join pegawai on dokter.kd_dokter=pegawai.nik where dokter.status='1' and dokter.kd_dokter<>'-' group by spesialis.nm_sps limit 5");
                     while ($rsquerydokter = mysqli_fetch_array($querydokter)) {
                          $datadokter = $datadokter .
                               "<div class='col-md-4 col-sm-6'>
                                     <div class='team-thumb wow fadeInUp' data-wow-delay='" . $delay . "s'>
-                                       
-                                          <div class='team-info'>
+                                       <div class='team-info'>
                                                <h3>$rsquerydokter[1]</h3>
                                                <p>$rsquerydokter[2]</p>
                                                <div class='team-contact-info'>
                                                     <p><i class='fa fa-phone'></i> HP/Telp. $rsquerydokter[5] </p>
                                                     <p><i class='fa fa-envelope-o'></i> No.SIP. $rsquerydokter[3] </p>
                                                </div>
-                                               <ul class='social-icon'>
-                                                    <li><a href='#' class='fa fa-linkedin-square'></a></li>
-                                                    <li><a href='#' class='fa fa-envelope-o'></a></li>
-                                               </ul>
+                                               
                                           </div>
                                     </div>
                                     <br/>
@@ -141,7 +137,7 @@ Pada tanggal 07 sampai dengan 10 Oktober 2019, Rumah Sakit Umum Datu Sanggul Ran
 <section id="news" data-stellar-background-ratio="2.5">
      <div class="container">
           <div class="row">
-                <div data-mc-src="453149c3-e690-42a0-adee-d57c9d78e2d1"></div>
+               <div data-mc-src="453149c3-e690-42a0-adee-d57c9d78e2d1"></div>
                <div class="col-md-12 col-sm-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
                          <h2>Jadwal Praktek Dokter</h2>
@@ -168,8 +164,8 @@ Pada tanggal 07 sampai dengan 10 Oktober 2019, Rumah Sakit Umum Datu Sanggul Ran
 <section id="appointment" data-stellar-background-ratio="3">
      <div class="container">
           <div class="row">
-        <script src="https://cdn2.woxo.tech/a.js#6010c3427e1f560015b71756" async data-usrc>
-        </script>
+               <script src="https://cdn2.woxo.tech/a.js#6010c3427e1f560015b71756" async data-usrc>
+               </script>
                <div class="col-md-6 col-sm-6">
                     <!-- Foto 2 -->
                     <img src="images/appointment-image.jpg" class="img-responsive" alt="">
